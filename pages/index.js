@@ -1,8 +1,7 @@
 function Home() {
   return (
     <h1>
-      Não se aproxime de uma cabra pela frente, de um cavalo por trás ou de um
-      idiota por qualquer dos lados.
+      A simplicidade é o que há de mais difícil no mundo: é o último resultado da experiência, a derradeira força do gênio.
     </h1>
   );
 }

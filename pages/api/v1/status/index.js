@@ -21,7 +21,7 @@ async function status(request, response) {
   });
 
   const databaseOpenedConnectionsValue = parseInt(
-    databaseOpenedConnectionsResult.rows.length,
+    databaseOpenedConnectionsResult.rows[0].count,
   );
 
   response.status(200).json({
