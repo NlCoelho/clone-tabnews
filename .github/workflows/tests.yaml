@@ -9,10 +9,10 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      -uses: actions/setup_node@v4
+      - uses: actions/setup_node@v4
        with:
         node-version: "lts/hydrogen"
 
-      -run: npm ci
+      - run: npm ci
 
       -run: npm test    
