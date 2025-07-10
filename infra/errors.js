@@ -2,7 +2,8 @@ export class MethodNotAllowedError extends Error {
   constructor() {
     super("Método não permitido para este endpoint.");
     this.name = "MethodNotAllowedError";
-    this.action = "Verifique se o método HTTP enviado é válido para este endpoint.";
+    this.action =
+      "Verifique se o método HTTP enviado é válido para este endpoint.";
     this.statusCode = 405;
   }
 
@@ -80,7 +81,8 @@ export class NotFoundError extends Error {
       cause,
     });
     this.name = "NotFoundError";
-    this.action = action || "Verifique se os dados enviados e na consulta estão corretos.";
+    this.action =
+      action || "Verifique se os dados enviados e na consulta estão corretos.";
     this.statusCode = 404;
   }
 
