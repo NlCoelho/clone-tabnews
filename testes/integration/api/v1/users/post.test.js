@@ -87,8 +87,8 @@ describe("POST to /api/v1/users", () => {
       const response2Body = await response2.json();
       expect(response2Body).toEqual({
         name: "ValidationError",
-        message: "O email utilizado já está sendo utilizado.",
-        action: "Utilize outro email para realizar o cadastro.",
+        message: "O email informado já está sendo utilizado.",
+        action: "Utilize outro email para realizar esta operação.",
         status_code: 400,
       });
     });
@@ -125,8 +125,8 @@ describe("POST to /api/v1/users", () => {
       const response2Body = await response2.json();
       expect(response2Body).toEqual({
         name: "ValidationError",
-        message: "O apelido utilizado já está sendo utilizado.",
-        action: "Utilize outro apelido para realizar o cadastro.",
+        message: "O username utilizado já está sendo utilizado.",
+        action: "Utilize outro username para realizar esta operação.",
         status_code: 400,
       });
     });
